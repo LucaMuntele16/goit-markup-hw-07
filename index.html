@@ -18,7 +18,16 @@
     <link rel="stylesheet" href="./css/style.css" />
     <title>Document</title>
   </head>
-  <body>
+      <!-- HAMBURGER MENU !!! 
+      <div class="modal is-hidden .js-menu-container">
+        <div class="modal-content">
+          <button class="modal-close-button .js-close-menu" type="button" >
+            <svg class="modal-icon" width="8" height="8">
+              <use href="./images/icons.svg#close-black"></use>
+            </svg>
+          </button>
+          </div>
+          </div> -->
     
     <!-- Header -->
 
@@ -31,6 +40,12 @@
             >Web
             <span class="logo second-logo-word link">Studio</span>
           </a>
+          <button type="submit" class="hamburger-menu-button" hamburger-open>
+          <svg class="hamburger-menu" width="32" height="22">
+            <use href="./images/icons.svg#hamburger-menu"></use>
+          </svg>
+        </button>
+        
 
           <ul class="hero-navbar-list list">
             <li class="hero-navbar-item">
@@ -501,6 +516,95 @@
         </div>
       </div>
     </footer>
+  <!-- HAMBURGER MENU !!!  -->
+  <div class="hamburger is-hidden-menu" hamburger-menu>
+    <div class="hamburger-content">
+      <button class="modal-close-button" type="button" hamburger-close>
+        <svg class="modal-icon" width="8" height="8">
+          <use href="./images/icons.svg#close-black"></use>
+        </svg>
+      </button>
+      
+      <ul class="hero-hamburger-list list">
+        <li class="hero-hamburger-item">
+          <a href="./index.html" class="hamburger-link link">Studio </a>
+        </li>
+        <li class="hero-hamburger-item">
+          <a href="./portfolio.html" class="hamburger-link link">Portfolio</a>
+        </li>
+        <li class="hero-hamburger-item">
+          <a href="" class="hamburger-link link">Contacts</a>
+        </li>
+      </ul>
+    
+    <!-- Contacts -->
+    
+    <address class="hamburger-adresses adresses-font">
+      <ul class="hamburger-contact-list">
+        <li class="al">
+          <a href="mailto:info@devstudio.com" class="hamburger-adress-first  link"
+            >info@devstudio.com</a
+          >
+        </li>
+        <li>
+          <a href="tel:+110001111111" class="hamburger-adress-second link"
+            >+11 (000) 111-11-11</a
+          >
+        </li>
+      </ul>
+      <ul class="hamburger-social-media-list">
+        <li class="social-media-list-item">
+          <a href="" class="social-media-elipse">
+            <svg
+              width="24"
+              height="24"
+              class="social-media-icon-color"
+            >
+              <use href="./images/icons.svg#instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-media-list-item">
+          <a href="" class="social-media-elipse">
+            <svg
+              width="24"
+              height="24"
+              class="social-media-icon-color"
+            >
+              <use href="./images/icons.svg#twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-media-list-item">
+          <a href="" class="social-media-elipse">
+            <svg
+              width="24"
+              height="24"
+              class="social-media-icon-color"
+            >
+              <use href="./images/icons.svg#facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-media-list-item">
+          <a href="" class="social-media-elipse">
+            <svg
+              width="24"
+              height="24"
+              class="social-media-icon-color"
+            >
+              <use href="./images/icons.svg#linkedin"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </address>
+    
+    </div>
+  </div>
+    
+    
+    <!-- !!MODAL!!! -->
     <div class="modal is-hidden" data-modal>
       <div class="modal-content">
         <button class="modal-close-button" type="button" data-modal-close>
@@ -596,6 +700,15 @@
         </form>
       </div>
     </div>
+    
     <script src="./js/modal.js"></script>
+    <script
+    defer
+    src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"
+  >
+</script>
+  <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>
