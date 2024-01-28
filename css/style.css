@@ -315,7 +315,7 @@ textarea {
 .hero-header {
   display: flex;
   margin: auto;
-  width: 1158px;
+  /* width: 1158px; */
   height: 72px;
   align-items: center;
   border-bottom: 1px solid #e7e9fc;
