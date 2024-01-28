@@ -699,13 +699,13 @@ margin-top:8px;
   gap: 16px;
   flex-wrap: wrap;
   justify-content: center;
-  width:428px;
+  max-width:428px;
   margin:auto;
  
 }
 
 .customers-list-item {
-  width: 190px;
+  width:calc((100% - 48px)/2);
   height: 72px;
 }
 
