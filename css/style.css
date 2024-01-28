@@ -65,7 +65,7 @@ textarea {
 }
 
 .modal-content {
-  width: 408px;
+  width: 392px;
   min-height: 584px;
   flex-shrink: 0;
   background-color: #fcfcfc;
@@ -378,15 +378,12 @@ textarea {
   transform: translateX(0);
   transition: transform 250ms ease-in-out;
 }
-/* .hamburger.is-on{
-  transform:translateX(0);
-  transition:transform 250ms ease-in-out;
-} */
+
 
 .hamburger-content {
   background-color: #fff;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   position: absolute;
   display: flex;
   flex-direction: column;
@@ -429,7 +426,7 @@ textarea {
 .hamburger-adress-second {
   color: #4d5ae5;
   font-family: var(--text-font-family);
-  font-size: 36px;
+  font-size: 32px;
   font-style: normal;
   font-weight: 700;
   line-height: 40px; /* 111.111% */
@@ -445,9 +442,9 @@ textarea {
 
 .hamburger-social-media-list {
   display: flex;
-  justify-content: row;
   gap: 56px;
   margin-top: 48px;
+  margin-bottom:40px;
 }
 
 .hamburger.is-hidden-menu {
@@ -536,15 +533,6 @@ textarea {
 }
 
 .title-first {
-  /* font-size: 56px;
-  font-weight: 700;
-  line-height: 60px;
-  letter-spacing: 0.02em;
-  text-align: center;
-  color: #ffffff;
-  line-height: 1.07;
-  max-width: 496px;
-  height: 120px; */
   color: var(--WHITE, #fff);
   text-align: center;
   font-family: var(--text-font-family);
@@ -968,6 +956,110 @@ textarea {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+@media screen and (width>=768px){
+  .hero-container{
+    display:flex;
+    justify-content: space-between;
+  }
+  .hamburger-menu-button{
+    display:none;
+  }
+  .first-logo-word-header{
+    margin-right: 0;
+  }
+   .nav-container-all{
+    display:flex;
+  }
+  .hero-navbar-list{
+    display:flex;
+  }
+  .hero-navbar{
+    width:100%;
+  }
+  .adresses{
+    display:inline;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px; 
+    letter-spacing: 0.48px;
+  }
+  .contact-list{
+    display:flex;
+    flex-direction: column;
+    gap:12px;
+  }
+  .title-first{
+    color: var(--WHITE, #FFF);
+    width:496px;
+    font-size: 56px;
+    line-height: 60px; 
+    letter-spacing: 1.12px;
+  }
+  .main-container{
+    gap:36px;
+  }
+  .qualities-list{
+    flex-wrap:wrap;
+    max-width:1158px;
+    flex-direction:row;
+    gap:24px;
+    
+  }
+  .qualities-children{
+    display: flex;
+    width: calc((100% - 56px)/2);
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    margin:auto;
+  }
+  .our-team-list{
+    display:flex;
+    gap:24px;
+    width:552px;
+    flex-wrap:wrap;
+    margin:auto;
+  }
+  .customers-list{
+    min-width:552px;
+    flex-wrap:wrap;
+    gap:24px;
+    margin:auto;
+    row-gap:72px;
+  }
+  .customers-list-item{
+    width:calc((100% - 48px)/3);
+  }
+  .footer-div{
+    width:552px;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap:24px;
+    flex-wrap:wrap;
+    margin:auto;
+    row-gap:72px;
+  }
+  .first-logo-word-footer{
+    text-align: left;
+  }
+  .footer-subscribe{
+    align-items:start;
+  }
+  .footer-form{
+    width:455px;
+    display:flex;
+    gap:24px;
+  }
+  .footer-label{
+    width:264px;
+  }
+  .footer-subscribe-button{
+    margin:0;
+  }
+}
+  
+
 
 /* Portfolio CSS */
 
