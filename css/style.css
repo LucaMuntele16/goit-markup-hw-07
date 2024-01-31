@@ -79,7 +79,7 @@ textarea {
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  padding: 72px 24px 24px 24px;
+  padding: 72px 16px 16px 16px;
 }
 .modal-close-button {
   width: 24px;
@@ -1004,6 +1004,13 @@ transform: translateX(0);
   .main-container{
     gap:36px;
   }
+  .modal-content{
+    width:408px;
+    height:584px;
+    padding:72px 24px 24px 24px;
+    
+  }
+
   .qualities-list{
     flex-wrap:wrap;
     max-width:1158px;
