@@ -1,0 +1,91 @@
+@media screen and (width>=1158px){
+    .container{
+        margin:0 auto;
+    }
+    .hero-header{
+        max-width:1440px;
+    }
+    .hero-navbar{
+        width:fit-content;
+        gap:76px;
+    }
+    .contact-list{
+        flex-direction: row;
+        align-items: center;
+        gap:40px;
+    }
+    .adresses{
+        font-size:16px;
+        line-height:24px;
+        letter-spacing: 0.02em;
+    }
+    .hero-container{
+        align-items: center;
+        justify-content: space-between;
+        padding:0 55px;
+    }
+    .first-section{
+        padding:188px 0;
+    }
+    .main-container{
+        gap: 48px;
+    }
+    .qualities{
+        padding:var(--padding-desktop);
+    }
+    .quality-box{
+        display:flex;
+        width:100%;
+    }
+    .qualities-children{
+        width:calc((100% - 72px)/4);
+    }
+    .title-third{
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 24px;
+        letter-spacing: 0.4px;
+    }
+    .qualities-paragraph{
+        font-weight: 400;
+    }
+    .wawd-section{
+        display:block;
+        padding-bottom:120px;
+    }
+    .our-team{
+        padding: var(--padding-desktop);
+    }
+    .our-team-list{
+        width: calc((100% - 72px)/4);
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+    .customers-section{
+        padding: var(--padding-desktop);
+    }
+    .customers-list{
+        width: calc((100% - 120px)/6);
+        flex-wrap:nowrap;
+    }
+    .customers-list-item{
+        width: calc((100% - 120px)/6);
+        min-width:168px;
+    }
+    .footer-div{
+        width:1158px;
+        justify-content: space-between;
+        align-items:flex-start;
+    }
+    .footer-text-container{
+        /* margin-right:120px; */
+        width:264px;
+    }
+    .social-media-footer{
+        align-items:baseline;
+    }
+    .footer-subscribe{
+        width:fit-content;
+    }
+}
