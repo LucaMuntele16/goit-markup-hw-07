@@ -15,6 +15,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/style-portfolio.css">
     <title>Document</title>
   </head>
   <body>
@@ -29,6 +30,11 @@
             >Web
             <span class="logo second-logo-word link">Studio</span>
           </a>
+          <button type="submit" class="hamburger-menu-button" hamburger-open>
+            <svg class="hamburger-menu" width="32" height="22">
+              <use href="./images/icons.svg#hamburger-menu"></use>
+            </svg>
+          </button>
 
           <ul class="hero-navbar-list list">
             <li class="hero-navbar-item">
@@ -276,6 +282,73 @@
       </section>
     </main>
 
+    <!-- HAMBURGER MENU !!!  -->
+    <div class="hamburger" hamburger-menu>
+      <div class="hamburger-content">
+        <button class="modal-close-button" type="button" hamburger-close>
+          <svg class="modal-icon" width="8" height="8">
+            <use href="./images/icons.svg#close-black"></use>
+          </svg>
+        </button>
+    
+        <ul class="hero-hamburger-list list">
+          <li class="hero-hamburger-item">
+            <a href="./index.html" class="hamburger-link link">Studio </a>
+          </li>
+          <li class="hero-hamburger-item">
+            <a href="./portfolio.html" class="hamburger-link link">Portfolio</a>
+          </li>
+          <li class="hero-hamburger-item">
+            <a href="" class="hamburger-link link">Contacts</a>
+          </li>
+        </ul>
+    
+        <!-- Contacts -->
+    
+        <address class="hamburger-adresses adresses-font">
+          <ul class="hamburger-contact-list">
+            <li class="al">
+              <a href="mailto:info@devstudio.com" class="hamburger-adress-first  link">info@devstudio.com</a>
+            </li>
+            <li>
+              <a href="tel:+110001111111" class="hamburger-adress-second link">+11 (000) 111-11-11</a>
+            </li>
+          </ul>
+          <ul class="hamburger-social-media-list">
+            <li class="social-media-list-item">
+              <a href="" class="social-media-elipse">
+                <svg width="24" height="24" class="social-media-icon-color">
+                  <use href="./images/icons.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-media-list-item">
+              <a href="" class="social-media-elipse">
+                <svg width="24" height="24" class="social-media-icon-color">
+                  <use href="./images/icons.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-media-list-item">
+              <a href="" class="social-media-elipse">
+                <svg width="24" height="24" class="social-media-icon-color">
+                  <use href="./images/icons.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-media-list-item">
+              <a href="" class="social-media-elipse">
+                <svg width="24" height="24" class="social-media-icon-color">
+                  <use href="./images/icons.svg#linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </address>
+    
+      </div>
+    </div>
+
     <!-- Footer -->
     <footer class="footer">
       <div class="footer-div container">
@@ -346,5 +419,6 @@
         </div>
       </div>
     </footer>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>
